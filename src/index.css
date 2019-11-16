@@ -1,0 +1,68 @@
+html{
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(/img/space.jpeg) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  min-height: 100%;
+}
+form{
+  padding:20px;
+  margin-top: 60px;
+}
+form button, form h5{
+  margin: 20px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: blue;
+  box-shadow: none;
+}
+
+.dashboard.container{
+  width:95%
+}
+
+.left.heading{
+  font-size: 2rem;
+}
+
+.leftBox{
+  float: left;
+  width: 60%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.rightBox{
+  float: right;
+  width: 30%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logoBox{
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.GroupDetailsBox{
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.leaderboard{
+  float: left;
+  width: 60%;
+  padding:24px
+}
