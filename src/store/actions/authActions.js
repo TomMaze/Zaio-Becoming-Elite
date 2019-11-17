@@ -34,9 +34,13 @@ export const signUp = (newUser) => {
         ).then((resp) => {
             return firestore.collection('users').doc(resp.user.uid).set({
                 groupName: newUser.groupName,
+                manager: newUser.manager,
                 firstMember: newUser.firstMember,
+                firstMemberPhone: newUser.firstMemberPhone,
                 secondMember: newUser.secondMember,
+                secondMemberPhone: newUser.secondMemberPhone,
                 thirdMember: newUser.thirdMember,
+                thirdMemberPhone: newUser.thirdMemberPhone,
                 initials: newUser.groupName[0]
             })
         }).then(() => {

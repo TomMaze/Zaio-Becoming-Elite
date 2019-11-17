@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
 const Navbar = (props) => {
   const { auth, profile } = props;
   //console.log(auth);
-  const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignedOutLinks />;
+  const links = auth.uid ? <SignedInLinks auth={auth} profile={profile} /> : <SignedOutLinks />;
   return (
     <nav className="nav-wrapper blue darken-4 z-depth-0">
       <div className="container">
