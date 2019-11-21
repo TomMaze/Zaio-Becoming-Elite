@@ -3,10 +3,10 @@ const initState = {}
 const taskReducer = (state = initState, action) => {
   switch (action.type){
     case 'CREATE_TASK':
-      console.log('created task', action.task);
+      //console.log('created task', action.task);
       return state;
     case 'CREATE_TASK_ERROR':
-      console.log('create task error', action.err);
+      //console.log('create task error', action.err);
       return state;
     default:
       return state

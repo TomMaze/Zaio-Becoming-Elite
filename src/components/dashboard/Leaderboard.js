@@ -40,7 +40,7 @@ class Leaderboard extends Component{
     render(){
         return(
             <div className= "container">
-                <table class='centered white'>
+                <table className='centered white'>
                     <tbody>
                         <tr>
                             <th className="center">ID</th>

@@ -5,10 +5,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(/img/space.jpeg) no-repeat;
-  background-size: 100%;
-  background-position: bottom;
-  min-height: 100%;
+  background: url(/img/zaio_background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 form{
   padding:20px;
@@ -26,8 +26,15 @@ textarea.materialize-textarea:focus:not([readonly]){
   box-shadow: none;
 }
 
+.homepage.container{
+  width:95%
+}
 .dashboard.container{
   width:95%
+}
+
+.nav-wrapper.container{
+  position: sticky;
 }
 
 .left.heading{

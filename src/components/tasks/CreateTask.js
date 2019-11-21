@@ -28,6 +28,10 @@ class CreateTask extends Component {
         <form className="white" onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">Create New Task</h5>
           <div className="input-field">
+            <input type="text" id='taskID' onChange={this.handleChange} />
+            <label htmlFor="taskID">Task ID</label>
+          </div>
+          <div className="input-field">
             <input type="text" id='title' onChange={this.handleChange} />
             <label htmlFor="title">Task Title</label>
           </div>
