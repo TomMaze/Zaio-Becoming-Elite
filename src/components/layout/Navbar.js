@@ -10,8 +10,10 @@ const Navbar = (props) => {
   const links = auth.uid ? <SignedInLinks auth={auth} profile={profile} /> : <SignedOutLinks />;
   return (
     <nav className="nav-wrapper blue darken-4 z-depth-0">
-      <div className="nav-div container">
+      <div className="heading">
         <Link to='/' className="brand-logo left">Zaio - Becoming Elite</Link>
+      </div>
+      <div className="main-nav container">
         { links }
       </div>
     </nav>
